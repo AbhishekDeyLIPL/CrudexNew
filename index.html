@@ -482,7 +482,7 @@ RIGHT SIDEBAR TOGGLE SECTION
             <div class="container pb-md-5 pb-sm-4">
                 <div class="row">
                     <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
-                        <img class="img-fluid img-responsive" src="assets/images/leonsGrp1.jpg" style="height: 70%;"
+                        <img class="img-fluid img-responsive" src="assets/images/leonsGrp1.jpg" style=""
                             alt=" ">
                     </div>
                     <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first">
@@ -623,8 +623,8 @@ RIGHT SIDEBAR TOGGLE SECTION
                     </a>
                     <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
                     <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                        <iframe src="assets/images/zoomVid.mp4" frameborder="0" allow=" muted fullscreen"
-                            allowfullscreen></iframe>
+                        <!-- <iframe src="assets/images/zoomVid.mp4" frameborder="0" muted allow="fullscreen"
+                            allowfullscreen></iframe> -->
                         <!-- <video loop class="banner-image">
                                 <source
                                     src="assets/images/zoomVid.mp4"
@@ -984,6 +984,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 
         <!-- banner image moving effect -->
         <script>
+
             var lFollowX = 0,
                 lFollowY = 0,
                 x = 0,
@@ -994,7 +995,32 @@ RIGHT SIDEBAR TOGGLE SECTION
                 x += (lFollowX - x) * friction;
                 y += (lFollowY - y) * friction;
 
-                translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+                let w = window.innerWidth;
+                // console.log(w)
+
+
+                if (1293 > w > 500){
+                    translate = 'translate(' + x + 'px, ' + y + 'px) scale(6)' ;
+                }
+                else if (w <= 500) {
+                    translate = 'translate(' + x + 'px, ' + y + 'px) scale(5)' ;
+
+                }
+                // else{
+                //     translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)' ;
+
+                // }
+                // else if(w < 500){
+                //     translate = 'translate(' + x + 'px, ' + y + 'px) scale(5)' ;
+                // }
+                // else{
+                //     translate = 'translate(' + x + 'px, ' + y + 'px) scale(2.3)' ;
+
+                // }
+                
+
+                // translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)' ;
+
 
                 $('.banner-image').css({
                     '-webit-transform': translate,
