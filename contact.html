@@ -340,7 +340,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                                     </a>
                                     <!-- Ozone dropdown -->
                                     <div class="dropdown-menu custom-submenu" aria-labelledby="dispenserDropdown">
-                                        <a class="dropdown-item" href="#">Ozone</a>
+                                        <a class="dropdown-item" href="#">Ozone/Nitro</a>
                                     </div>
                                 </div>
                             </li>
@@ -429,7 +429,8 @@ RIGHT SIDEBAR TOGGLE SECTION
                                     </div>
                                     <div class="cont-right">
                                         <h6>Company Address</h6>
-                                        <p>10001, 5th Avenue, 12202 street, London.</p>
+                                        <p>10 Desai Apt. ,
+                                            Opp Dev Commercial Centre, Vadodara-390021</p>
                                     </div>
                                 </div>
                                 <div class="d-flex contact-grid mt-4 pt-lg-2">
@@ -482,7 +483,7 @@ RIGHT SIDEBAR TOGGLE SECTION
                     <!-- contact form -->
                     <div class="contact-form-sec pt-5 mt-md-5">
                         <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4" style="max-width:600px">
-                            <h3 class="title-style">We will Answer all your <span>Questions</span></h3>
+                            <h3 class="title-style">We will Answer all your <span>Queries</span></h3>
                         </div>
                         <div class="row contact-block align-items-center">
                             <div class="col-md-9 contact-right mt-md-0 mt-4 pl-lg-4 m-auto">
@@ -542,30 +543,31 @@ RIGHT SIDEBAR TOGGLE SECTION
                         <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
                             <ul>
                                 <h6 class="footer-title-29">Usefull Links</h6>
-                                <li><a href="index.html">Career With Us</a></li>
-                                <li><a href="about.html">Become Distributor</a></li>
-                                <li><a href="#careers">Recent RND</a></li>
-                                <li><a href="blog.html">Products</a></li>
-                                <li class="mb-0"><a href="contact.html">Our Team</a></li>
+                                <li><a href="#">Career With Us</a></li>
+                                <li><a href="#">Become Distributor</a></li>
+                                <li><a href="#">Recent RND</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li class="mb-0"><a href="#">Our Team</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5 pl-lg-4">
                             <h6 class="footer-title-29">Contact Info</h6>
                             <ul>
-                                <li><a href="#support"> <i class="fa-solid fa-location-dot"></i> &nbsp;10 Desai Apt. ,
+                                <li><a href="https://www.google.com/maps/place/Crudex+Controls+Pvt.+Ltd./@22.313489,73.144111,15z/data=!4m6!3m5!1s0x395fc900598ce785:0xd11d2a0afe572349!8m2!3d22.3134893!4d73.1441112!16s%2Fg%2F11wjqrxph6?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"> <i class="fa-solid fa-location-dot"></i> &nbsp;10 Desai Apt. ,
                                         Opp Dev Commercial Centre, Vadodara-390021</a></li>
-                                <li><a href="#privacy"> <i class="fa-solid fa-phone"></i> &nbsp; (+91)-8000718085</a>
+                                <li><a href="#"> <i class="fa-solid fa-phone"></i> &nbsp; (+91)-8000718085</a>
                                 </li>
-                                <li><a href="#terms"> <i class="fa-solid fa-phone"></i> &nbsp; (+91)-8000118085</a></li>
-                                <li><a href="#help"> <i class="fa-solid fa-envelope"></i> &nbsp;
-                                        Inquiry@leons-group.com</a></li>
+                                <li><a href="#"> <i class="fa-solid fa-phone"></i> &nbsp; (+91)-8000118085</a></li>
+                                <li><a href="#"> <i class="fa-solid fa-envelope"></i> &nbsp;
+                                        crudexcontrols@gmail.com</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5 pl-lg-4">
                             <h6 class="footer-title-29">Give Us a Visit</h6>
                             <iframe
+                                id="mapIframe"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0620156455893!2d73.14153627533588!3d22.313494242417004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc900598ce785%3A0xd11d2a0afe572349!2sCrudex%20Controls%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1729593378558!5m2!1sen!2sin"
-                                width="250" height="185" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                height="185" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                         <!-- <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5 pl-lg-5">
                             <h6 class="footer-title-29">Newsletter </h6>
@@ -608,6 +610,8 @@ RIGHT SIDEBAR TOGGLE SECTION
         <script data-cfasync="false"
             src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         <script>
+            const iframe = document.getElementById('mapIframe');
+            iframe.width = window.innerWidth < 420 ? "220%" : 250;
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () {
                 scrollFunction()
