@@ -15,3 +15,14 @@ function togglePassword() {
       }
   }
   
+  function goLogin() {
+    const eid = document.getElementById("email").value;
+    const passw = document.getElementById("password").value;
+  
+    if (eid === "crudexcontrols@gmail.com" && passw === "1234") {
+      window.location.href = "index.html"; // Redirects to index.html
+    } else {
+      alert("Invalid email or password"); // Optional: show an error message if login fails
+    }
+  }
+  

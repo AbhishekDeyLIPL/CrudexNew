@@ -1,168 +1,293 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .left {
-    width: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left, .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.left {
+  background-color: white;
+}
+
+.right {
+  background-image: url(/assets/images/loginBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  filter: brightness(0.7);
+  position: relative;
+}
+
+/* .background-pattern {
+  background-image: url('/demos_new/template_demo/06-04-2021/industries-liberty-demo_Free/1450891409/web/assets/images/loginImg8.webp');
+  filter: brightness(1);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+} */
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+.logo video{
+  margin-top: -20%;
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.loginEmail{
+  font-size: smaller; 
+  font-weight: 900;
+}
+
+.loginPass{
+  font-size: smaller; 
+  font-weight: 900;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 60%;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: small;
+}
+
+.forgot-password {
+  color: #4A2E96;
+  text-decoration: none;
+  font-size: small;
+  margin-top: -5%;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f9580e;
+  color: white;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a33e10;
+}
+
+.login-with {
+  text-align: center;
+  margin: 1.5rem ;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  color: #666;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.google-btn:hover {
+  box-shadow: 0px 0px 2.5px 2.5px #d04f13;
+}
+
+.register {
+  text-align: center;
+}
+
+.register a {
+  color: #4A2E96;
+  text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+  /* .logo video{
+    margin-top: -10%;
+  } */
+
+
+
+  .container {
+      flex-direction: column;
   }
-  
-  .right {
-    width: 50%;
-    background-color: #4A2E96; /* Background color similar to your image */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+
+  .left, .right {
+      width: 100%;
+      padding: 1rem;
   }
-  
-  .background-pattern {
-    background-image: url('/demos_new/template_demo/06-04-2021/industries-liberty-demo_Free/1450891409/web/assets/images/loginImg8.webp');
-    filter: brightness(1);
+
+  .left{
+    background-image: url("/assets/images/loginBack3.png");
+    /* filter: blur(1px); */
+    /* -webkit-filter: blur(1px); */
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    /* background-color: #db5517; */
+    background-position: center;
+    
   }
-  
+
   .login-form {
-    max-width: 400px;
-    width: 100%;
+      max-width: 90%;
+      height: 100%;
+      border: 1px solid;
+      border-radius: 25px;
+      padding: 10% 10% 10% 10%;
+      /* line-height: 100%; */
+      font-size: small;
+      background-color: rgba(0, 0, 0, 0.4);
+      
+  }
+
+  form{
+    /* margin-top: -10%; */
+    font-size: small;
+    /* line-height: 30%; */
+    input::placeholder{
+      font-size: small;
+    } 
+  }
+
+  .forgot-password {
+    font-size: 0.875rem;
+    margin-top: -9.8%;
+  }
+
+  .login-with p{
+    margin: 1.5rem ;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .right{
+    display: none;
+  }
+
+  .loginEmail{
+    color: white;
   }
   
-  .logo img {
-    display: block;
-    margin: 0 auto 2rem auto;
+  .loginPass{
+    color: white;
   }
-  
-  h1 {
-    font-size: 2rem;
-    color: #333;
-    /* text-align: center; */
+
+  .remember-me{
+    color: white;
   }
-  
-  p {
-    color: #666;
-    /* text-align: center; */
-    margin-bottom: 2rem;
+
+  .login-with p{
+    color: white;
   }
-  
-  .input-group {
-    margin-bottom: 1.5rem;
-    position: relative;
-    ::placeholder{
-        font-size: smaller;
-    }
+
+  .register{
+    color: white;
   }
-  
-  input {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+  .register a{
+    color: #4400ff;
   }
-  
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
+
+  .forgot-password{
+    color: #4400ff;
   }
-  
+
+  h2 {
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .h2after{
+    color: rgb(245, 242, 242);
+    font-size: small;
+  }
+
   .toggle-password {
     position: absolute;
-    top: 60%;
-    right: 15px;
-    /* transform: translateY(-50%); */
-    cursor: pointer;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+    top: 52%;
   }
 
-  .remember-me {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; /* Optional: add some space between checkbox and text */
-    white-space: nowrap;
-    font-size: small;
-}
-  
+  p {
+      font-size: 0.9rem;
+  }
+
+  .btn, .google-btn {
+      font-size: 0.8rem;
+  }
+
   .forgot-password {
-    color: #4A2E96;
-    text-decoration: none;
-    font-size: 0.875rem;
+      font-size: 0.75rem;
   }
-  
-  .btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #f9580e;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    /* background-color: #d04f13; */
-    background-color: #a33e10;
-  }
-  
-  .login-with {
-    text-align: center;
-    margin: 1.5rem 0;
-  }
-  
-  .google-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #ddd;
-    color: #666;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .google-btn:hover{
-    box-shadow: 0px 0px 2.5px 2.5px #d04f13;
-  }
-  
-  .google-btn img {
-    vertical-align: middle;
-    margin-right: 8px;
-  }
-  
-  .register {
-    text-align: center;
-  }
-  
-  .register a {
-    color: #4A2E96;
-    text-decoration: none;
-  }
-  
+}

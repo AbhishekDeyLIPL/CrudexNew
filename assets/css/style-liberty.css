@@ -11928,7 +11928,7 @@ div#small-dialog iframe {
 .navbar .navbar-brand {
   margin: 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 25px;
   /* color: var(--logo-color); */
   color: white;
   font-weight: 600;
@@ -11943,7 +11943,7 @@ div#small-dialog iframe {
 }
 
 a.navbar-brand:hover {
-  color: var(--secondary-color);
+  color: #3bb357;
 }
 
 .navbar-expand-lg .navbar-nav .nav-item {
@@ -12518,7 +12518,7 @@ h3.title-main:after {
 }
 
 .w3l-banner h3 {
-  font-size: 54px;
+  font-size: 44px;
   line-height: 64px;
   font-weight: 300;
 }
@@ -13735,7 +13735,7 @@ div#owl-demo2 .owl-dots {
 
 .footer-29-w3l a.footer-brand-logo {
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   display: inline-block;
 }

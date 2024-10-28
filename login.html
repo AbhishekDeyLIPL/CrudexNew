@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login | Crudex Controls</title>
     <link rel="stylesheet" href="assets/css/login.css">
     <script src="assets/js/login.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -18,47 +18,46 @@
             <div class="login-form">
                 <center>
                     <div class="logo">
-                        <video autoplay muted="muted" height="180" width="200" style="margin-top: -20%;">
+                        <video autoplay muted="muted" height="180" width="200">
                             <source src="assets/images/loginLogo1.webm" type="video/WebM">
                             Sorry, your browser doesn't support embedded videos.
                         </video>
                     </div>
                 </center><br>
-                <h1>Get Started!</h1><br>
-                <p>Enter to get unlimited access to data & information.</p> <br>
-                <form action="#" method="POST">
+                <h2>Get Started!</h2><br>
+                <p class="h2after">Enter to get unlimited access to data & information.</p> <br>
+                <div >
                     <div class="input-group">
-                        <label for="email" style="font-size: smaller; font-weight: 900;">Email <span
-                                style="color: red;">*</span></label>
-                        <input type="email" id="email" name="email" placeholder="Enter your mail address" required>
+                        <label  class="loginEmail">Email <span style="color: red;">*</span></label>
+                        <input  type="email" id="email" name="email" placeholder="Enter your mail address" required>
                     </div>
                     <div class="input-group">
-                        <label for="password" style="font-size: smaller; font-weight: 900;">Password <span
-                                style="color: red;">*</span></label>
-                        <input type="password" id="password" name="password" placeholder="Enter password" required>
-                        <span class="toggle-password" onclick="togglePassword()"><i class="fa-solid fa-eye" style="color: rgb(100, 100, 100);"></i></span>
-                        <!-- <span class="toggle-password" id="togglePass" onclick="togglePassword()">👁️</span> -->
+                        <label  class="loginPass">Password <span style="color: red;">*</span></label>
+                        <input  type="password" id="password" name="password" placeholder="Enter password" required>
+                        <span class="toggle-password" onclick="togglePassword()"><i class="fa-solid fa-eye"
+                                style="color: rgb(100, 100, 100);"></i></span>
                     </div>
                     <div class="options">
                         <label class="remember-me"><input type="checkbox" name="remember">Remember me</label>
-                        <a href="#" class="forgot-password" style="font-size: small;">Forgot your password?</a>
+                        <a href="#" class="forgot-password">Forgot your password?</a>
                     </div>
-                    <button type="submit" class="btn">Log In</button>
+                    <a href="index.html"><button class="btn">Log In</button></a>
                     <div class="login-with">
                         <p>Or Login with</p>
                         <button class="google-btn">Sign up with Google</button>
                     </div>
-                </form>
+                </div>
                 <p class="register">Don't have an account? <a href="#">Register here</a></p>
             </div>
         </div>
-        
+
         <div class="right">
             <div class="background-pattern"></div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    
 </body>
+
 
 </html>
