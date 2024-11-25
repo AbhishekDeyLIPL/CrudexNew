@@ -4683,6 +4683,7 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   list-style: none;
   align-items: center;
+  /* background: black; */
 }
 
 .navbar-nav .nav-link {
@@ -4730,6 +4731,22 @@ input[type="button"].btn-block {
   background: no-repeat center center;
   background-size: 100% 100%;
 }
+
+.downloadBtn{
+  border: 1px solid #fe753f;
+  background-color: #fe753f;
+  text-align: center;
+}
+
+.downloadBtn:hover{
+  border: 1px solid #d94a09;
+  background-color: #d94a09;
+}
+
+.downloadBtn button{
+  color: white;
+}
+
 
 @media (max-width: 575.98px) {
 
@@ -12198,12 +12215,15 @@ button.search-btn:hover {
     -webkit-animation-name: none;
     animation-name: none;
     float: left;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    background: var(--bg-color);
+    background: rgba(255,255,255, 0.5);
     padding: 20px;
     margin-top: 16px;
     box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    /* filter: blur(50%); */
+    /* margin-left: 40%; */
   }
 
   .navbar-nav:last-child {
@@ -12343,28 +12363,65 @@ button.search-btn:hover {
   }
 }
 
+.careerImgStyle{
+  width: 66%;
+  margin-top: 1%;
+}
+
+.applyBtn{
+  border: 1px solid #f9580e;
+  width: 12%;
+  background-color: #fe753f;
+  text-align: center;
+}
+
+.applyBtn:hover{
+  border: 1px solid #d94a09;
+  background-color: #d94a09;
+}
+
+.applyBtn button{
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: smaller;
+  padding: 6% 0% 6% 0%;
+  transition: ease;
+}
+
 @media only screen and (max-width: 480px) {
   .navbar .navbar-brand {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   a.navbar-brand i {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .cont-ser-position {
     right: 45px;
+    top: 28px
   }
+
+  .careerImgStyle{
+    width: 100%;
+    margin-top: -6%;
+
+  }
+  .applyBtn{
+    width: 35%;
+  }
+
+  
 }
 
 @media only screen and (max-width: 380px) {
-  a.navbar-brand i {
+  /* a.navbar-brand i {
     font-size: 24px;
   }
 
   .navbar .navbar-brand {
     font-size: 24px;
-  }
+  } */
 }
 
 /* //navigation styling */
@@ -13849,6 +13906,8 @@ div#owl-demo2 .owl-dots {
     text-align: center;
   }
 }
+
+
 
 /* //footer */
 
