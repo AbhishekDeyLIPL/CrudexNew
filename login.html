@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Crudex Controls</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="assets/js/login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="login-form">
+                <center>
+                    <div class="logo">
+                        <video autoplay muted="muted" height="180" width="200">
+                            <source src="assets/images/loginLogo1.webm" type="video/WebM">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                </center><br>
+                <h2>User Login</h2><br>
+                <p class="h2after">Enter to get unlimited access to data & information.</p> <br>
+                <div >
+                    <div class="input-group">
+                        <label  class="loginUserName">Username <span style="color: red;">*</span></label>
+                        <input  type="userName" id="userName" name="userName" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-group">
+                        <label  class="loginPass">Password <span style="color: red;">*</span></label>
+                        <input  type="password" id="password" name="password" placeholder="Enter password" required>
+                        <span class="toggle-password" onclick="togglePassword()"><i class="fa-solid fa-eye"
+                                style="color: rgb(100, 100, 100);"></i></span>
+                    </div>
+                    <div class="options">
+                        <label class="remember-me"><input type="checkbox" name="remember">Remember me</label>
+                        <a href="#" class="forgot-password">Forgot your password?</a>
+                    </div>
+                    <a><button onclick="goLogin()" class="btn">Log In</button></a>
+                    <div class="login-with">
+                        <p>Or Login with</p>
+                        <button class="google-btn">Sign up with Google</button>
+                    </div>
+                </div>
+                <p class="register">Don't have an account? <a href="signup.html">Register here</a></p>
+                <a href="index.html" style="color: black; text-decoration: none;"><i class="fa-solid fa-house"></i> &nbsp;Home</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="background-pattern"></div>
+        </div>
+    </div>
+
+    
+</body>
+
+
+</html>
