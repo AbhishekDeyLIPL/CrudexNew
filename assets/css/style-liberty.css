@@ -13907,13 +13907,19 @@ div#owl-demo2 .owl-dots {
   }
 }
 
+/* operations manager
+    product design engineer
+    service engineer - locations 1.  
+*/
+
 
 
 /* //footer */
 
 /* inner-banner */
 .inner-banner {
-  background: url(../images/aboutBanner2.1.png) no-repeat center;
+  background: url(../images/BannerNew.png) no-repeat center;
+  /* background: url(../images/aboutBanner2.1.png) no-repeat center; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

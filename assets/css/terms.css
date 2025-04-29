@@ -13856,7 +13856,10 @@ div#owl-demo2 .owl-dots {
 /* inner-banner */
 .inner-banner {
   /* background: url(../images/aboutBanner2.1.png) no-repeat center; */
-  background-color: #0000b3;
+  /* background-color: #0000b3; */
+  /* background-image: url("../images/BannerNew.png"); */
+  background: url(../images/BannerNew.png) no-repeat center;
+
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
