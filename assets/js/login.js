@@ -38,7 +38,7 @@ function goLogin() {
   localStorage.setItem('authDict', JSON.stringify(authDict));
 
   if (user in authDict && authDict[user] == passw){
-      window.location.href = "index.html";
+      window.location.href = "home.html";
   }
   else{
       alert("The password or username you have entered is incorrect");
